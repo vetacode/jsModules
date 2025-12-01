@@ -58,3 +58,8 @@ import { sayHi as hi, sayBye as bye } from './say.js';
 
 hi('John'); // Hello, John!
 bye('John'); // Bye, John!
+
+//Export 'as' caranya:
+// 📁 say.js
+// ...
+export { sayHi as hi, sayBye as bye };
