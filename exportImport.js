@@ -1,5 +1,6 @@
 'use strict';
 
+//EXPORTING
 //Export before declarations
 // export an array
 export let months = [
@@ -35,3 +36,19 @@ function sayBye(user) {
 }
 
 export { sayHi, sayBye }; // a list of exported variables
+
+//IMPORTING
+// 📁 main.js
+import { sayHi, sayBye } from './say.js';
+
+sayHi('John'); // Hello, John!
+sayBye('John'); // Bye, John!
+
+//Import all: import * as <obj>
+// 📁 main.js
+import * as say from './say.js';
+
+say.sayHi('John');
+say.sayBye('John');
+
+//Import “as”:  to import under different names.
