@@ -63,3 +63,20 @@ bye('John'); // Bye, John!
 // 📁 say.js
 // ...
 export { sayHi as hi, sayBye as bye };
+
+//EXPORT DEFAULT: more preferred
+// 📁 user.js
+export default class User {
+  // just add "default"
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+//NOTES: only one export default per file.
+
+//How to Import:
+// 📁 main.js
+import User from './user.js'; // not {User}, just User
+
+new User('John');
