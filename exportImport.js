@@ -80,3 +80,13 @@ export default class User {
 import User from './user.js'; // not {User}, just User
 
 new User('John');
+
+//can also choose any name to import
+import User from './user.js'; // works
+import MyUser from './user.js'; // works too
+// could be import Anything... and it'll still work
+
+//Re-export
+export { sayHi } from './say.js'; // re-export sayHi
+
+export { default as User } from './user.js'; // re-export default
