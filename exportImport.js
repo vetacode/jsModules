@@ -52,3 +52,9 @@ say.sayHi('John');
 say.sayBye('John');
 
 //Import “as”:  to import under different names.
+//dipake biar lebih ringkas/simple saat pemanggilan
+// 📁 main.js
+import { sayHi as hi, sayBye as bye } from './say.js';
+
+hi('John'); // Hello, John!
+bye('John'); // Bye, John!
