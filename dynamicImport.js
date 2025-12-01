@@ -35,3 +35,9 @@ import(modulePath);
 
   say();
 }
+
+//NOTES: Dynamic imports work in regular scripts, they don’t require script type="module".
+
+//Although import() looks like a function call, it’s a special syntax that just happens to use parentheses (similar to super()).
+
+// So we can’t copy import to a variable or use call/apply with it. It’s not a function.
